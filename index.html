@@ -76,23 +76,61 @@
         top: 0;
         left: 0;
         padding: 15px;">
-            <div class="uk-flex uk-flex-middle">
+            <div class="uk-flex uk-flex-middle uk-margin-top">
                 <span class="uk-margin-small-right" uk-icon="icon: clock"></span>
                 ПН-ПТ 09:00-18:00
             </div>
             <a href="tel:+78553111111">
-                <div class="uk-flex uk-flex-middle">
+                <div class="uk-flex uk-flex-middle uk-margin-small-top">
                     <span class="uk-margin-small-right" uk-icon="icon: receiver"></span>
                     <div>(8553) 111-111</div>
                 </div>
             </a>
-            <div class="uk-flex uk-flex-middle">
+            <div class="uk-flex uk-flex-middle uk-margin-small-top">
                 <span class="uk-margin-small-right" uk-icon="icon: location"></span>
                 г. Альметьевск, ул. Шевченко, 108
             </div>
         </div>
     </div>
 </div>
+<div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="img/01.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                <h2 class="uk-margin-remove">Center</h2>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="img/02.jpg" alt="" uk-cover>
+            <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="img/03.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                <h3 class="uk-margin-remove">Overlay Bottom</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </li>
+        <li>
+            <img src="img/04.jpg" alt="" uk-cover>
+            <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
+                <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+    </ul>
+
+    <div class="uk-light">
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+
 </div>
     
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
