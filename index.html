@@ -6,173 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Новый сайт</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
 </head>
 <body>
-<main>
-    <div class="row top-line"> 
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex">
-                <div class="mr-2">РУС</div>
-                <div class="mr-2">ENG</div>
-                <div>FR</div>
+<div class="uk-width-1-1 uk-background-secondary uk-light ">
+    <div class="uk-container uk-container-center uk-padding-small uk-visible@s">
+        <div class="uk-grid uk-flex-between">
+            <div class="uk-flex uk-flex-middle uk-visible@s">
+                <span class="uk-margin-small-right" uk-icon="icon: clock"></span>
+                ПН-ПТ 09:00-18:00
             </div>
-            <div>8 (800) 123-45-67</div>
-            <div>sales@log.ru</div>
+            <a href="tel:+78553111111">
+                <div class="uk-flex uk-flex-middle">
+                    <span class="uk-margin-small-right" uk-icon="icon: receiver"></span>
+                    <div>(8553) 111-111</div>
+                </div>
+            </a>
+            <div class="uk-flex uk-flex-middle  uk-visible@m">
+                <span class="uk-margin-small-right" uk-icon="icon: location"></span>
+                г. Альметьевск, ул. Шевченко, 108
+            </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
-        <div class="container">
-            <a href="#">
-                <img class="mr-3" src="img/logo.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Услуги <span class="sr-only">(current)</span></a>
+</div>        
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-container uk-width-1-1 uk-flex uk-flex-middle uk-flex-between">
+            <img class="logo" src="img/logo.svg" alt="">  
+            <ul class="uk-navbar-nav uk-visible@s">
+                <li>
+                    <a href="#">О нас</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">О компании</a>
+                <li>
+                    <a href="#">Услуги</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Вакансии</a>
+                <li>
+                    <a href="#">Портфолио</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Контакты</a>
-                </li>
-                </ul>
-            </div>
+            </ul>
+            <span uk-toggle="target: #offcanvas-usage" class="uk-margin-small-right uk-hidden@s" uk-icon="icon: menu"></span>
         </div>
     </nav>
-    <div class="row main-bg">
-        <div class="container d-flex justify-content-center align-items-center">
-            <div class="main-block p-4 d-flex justify-content-center align-items-center">
-                <div>
-                    <div class="main-header">Грузовые перевозки</div>
-                    <div class="sub-title">Перевозка крупногабаритных грузов по России и Европе. Полное экспедирование, страхование, упаковка и хранение грузов</div>
-                </div>                
-            </div>
+    <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
-</main>
-<section class="services d-flex align-items-center p-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="devider"></div>
-                <div>
-                    <div class="services-header">грузоперевозки по европе</div>
-                    <div class="services-sub-title">Страны Евросоюза, а также Украина, Белоруссия со всеми документами.</div>
-                </div>
-            <button type="button" class="btn btn-primary">Подробнее</button>
-            </div>
-            <div class="col-md-6">
-                <img src="img/truck.png" alt="">
-            </div>
-            
-        </div>        
-    </div>
-</section>
-<section class="all-services d-flex align-items-center p-4">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="devider"></div>
-                <div class="services-header">услуги</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card services-card d-flex justify-content-center align-items-center">
-                <div class="icon-circle mb-3">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"/>
-                    </svg>
-                </div>               
-                <h5>Авиаперевозки</h5>
-            </div>
-            <div class="card services-card d-flex justify-content-center align-items-center">
-                <div class="icon-circle mb-3">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"/>
-                    </svg>
-                </div>               
-                <h5>Авиаперевозки</h5>
-            </div>
-            <div class="card services-card d-flex justify-content-center align-items-center">
-                <div class="icon-circle mb-3">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"/>
-                    </svg>
-                </div>               
-                <h5>Авиаперевозки</h5>
-            </div>
-            <div class="card services-card d-flex justify-content-center align-items-center">
-                <div class="icon-circle mb-3">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"/>
-                    </svg>
-                </div>               
-                <h5>Авиаперевозки</h5>
-            </div>
-            <div class="card services-card d-flex justify-content-center align-items-center">
-                <div class="icon-circle mb-3">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"/>
-                    </svg>
-                </div>               
-                <h5>Авиаперевозки</h5>
-            </div>
-            <div class="card services-card d-flex justify-content-center align-items-center">
-                <div class="icon-circle mb-3">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"/>
-                    </svg>
-                </div>               
-                <h5>Авиаперевозки</h5>
-            </div>
-            <div class="card services-card d-flex justify-content-center align-items-center">
-                <div class="icon-circle mb-3">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"/>
-                    </svg>
-                </div>               
-                <h5>Авиаперевозки</h5>
-            </div>
-            <div class="card services-card d-flex justify-content-center align-items-center">
-                <div class="icon-circle mb-3">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"/>
-                    </svg>
-                </div>               
-                <h5>Авиаперевозки</h5>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<section class="services d-flex align-items-center p-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="devider"></div>
-                <div>
-                    <div class="services-header">грузоперевозки по европе</div>
-                    <div class="services-sub-title">Страны Евросоюза, а также Украина, Белоруссия со всеми документами.</div>
-                </div>
-            <button type="button" class="btn btn-primary">Подробнее</button>
-            </div>
-            <div class="col-md-6">
-                <img src="img/truck.png" alt="">
-            </div>            
-        </div>        
-    </div>
-</section>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</div>
+    
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
 </body>
 </html>

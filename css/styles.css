@@ -1,6 +1,13 @@
-.top-line {
-    background: #C8A35F;
-    height: 45px;
+.logo {
+    height: 50px;
+}
+
+.uk-offcanvas {
+    width: 100%;
+}
+
+.uk-offcanvas-bar {
+    width: 100%!important;
 }
 
 .header {
