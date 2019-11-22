@@ -29,51 +29,70 @@
         </div>
     </div>
 </div>        
-    <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-container uk-width-1-1 uk-flex uk-flex-middle uk-flex-between">
-            <img class="logo" src="img/logo.svg" alt="">  
-            <ul class="uk-navbar-nav uk-visible@s">
-                <li>
-                    <a href="#">О нас</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Услуги</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Портфолио</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <span uk-toggle="target: #offcanvas-usage" class="uk-margin-small-right uk-hidden@s" uk-icon="icon: menu"></span>
-        </div>
-    </nav>
-    <div id="offcanvas-usage" uk-offcanvas>
-        <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<nav class="uk-container" uk-navbar>
+    <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-between uk-padding-small">
+        <img class="logo" src="img/logo.svg" alt="">  
+        <ul class="uk-navbar-nav uk-visible@s">
+            <li>
+                <a href="#">О нас</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Услуги</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Портфолио</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <span uk-toggle="target: #offcanvas-usage" class="uk-hidden@s" uk-icon="icon: menu"></span>
+    </div>
+</nav>
+<div id="offcanvas-usage" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <div style="background: blueviolet;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px;">
+            <div class="uk-flex uk-flex-middle">
+                <span class="uk-margin-small-right" uk-icon="icon: clock"></span>
+                ПН-ПТ 09:00-18:00
+            </div>
+            <a href="tel:+78553111111">
+                <div class="uk-flex uk-flex-middle">
+                    <span class="uk-margin-small-right" uk-icon="icon: receiver"></span>
+                    <div>(8553) 111-111</div>
+                </div>
+            </a>
+            <div class="uk-flex uk-flex-middle">
+                <span class="uk-margin-small-right" uk-icon="icon: location"></span>
+                г. Альметьевск, ул. Шевченко, 108
+            </div>
         </div>
     </div>
+</div>
 </div>
     
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>

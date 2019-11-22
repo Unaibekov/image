@@ -1,5 +1,9 @@
 .logo {
-    height: 50px;
+    height: 40px;
+}
+
+.uk-navbar-nav > li > a {
+    min-height: 40px!important;
 }
 
 .uk-offcanvas {
