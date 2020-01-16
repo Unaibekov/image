@@ -1,122 +1,124 @@
-.logo {
-    height: 40px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.uk-navbar-nav > li > a {
-    min-height: 40px!important;
-}
-
-.uk-offcanvas {
+.progress-container {
+    position: fixed;
     width: 100%;
-}
+    height: 8px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+  }
 
-.uk-offcanvas-bar {
-    width: 100%!important;
-}
 
-.header {
-    background: #2F343A;
-    height: 100px;
-}
-
-.main-bg {
-    background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75)), url(../img/bg.jpg) no-repeat center / cover;
-    height: 620px;
-}
-
-.main-block {
-    width: 920px;
-    height: 245px;
-    border: 1px solid #C8A35F;
-}
-
-.main-header {
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 75px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;    
-    color: #FFFFFF;
-}
-
-.sub-title {
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.services {
-    background: #393F47;
-}
-
-.all-services {
-    background: #2F343A;
-}
-
-.services-card {
-    width: 276px;
-    height: 180px;
-    background: #393F47!important;
+  .item {
+    width: 25%;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    background: blue;
+  }
+  
+  .item:hover {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .item:hover .overlay {
+    opacity: 0.5;
+  }
+  .item:hover .line {
+    width: 100%;
+  }
+  
+  .item img {
+    height: 100%;
+  }
+  
+  .title {
+    position: absolute;
     color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.services-card:hover {
-    background: #C8A35F!important;
-    color: #2F343A;
-}
-
-.services-card svg {
-    fill: white;
-    z-index: 999;
-}
-
-.icon-circle {
-    background: #2F343A;
-    padding: 15px;
-    border-radius: 100%;
-}
-
-.services-card:hover svg {
-    fill: #C8A35F;
-}
-
-.devider {
-    width: 90px;
-    height: 6px;
-    background: #C8A35F;
-    margin-bottom: 40px;
-}
-
-.services {
-    height: 550px;
-}
-.services-header {
-    font-weight: bold;
     font-size: 40px;
-    line-height: 49px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
+    font-family: cuprum;
+    margin: -15px 0 20px 20px;
+  }
+  
+  .icon {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icon {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    transform: translateX(-80%);
+    width: 2em;
+    height: 2em;
+    transition: all 0.3s ease-in-out;
+  }
+  .item:hover .icon {
+      opacity: 1;
+      transform: translateX(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: #000;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+  }
+  
+  .line {
+      height: 5px;
+      display: block;
+      /* margin: 10px 0; */
+      background: linear-gradient(45deg, rgba(0,129,255,1) 0%, rgb(0, 247, 255) 100%);
+      bottom: 0px;
+      width: 0%;
+      transition: width 0.3s;
+      position: absolute;
+      z-index: 9;
+  }
+  
+  
+  @media (max-width: 575.98px) { 
+      .item {
+          width: 100%;
+        }
 
-.services-sub-title {
-    font-size: 18px;
-    line-height: 28px;
-    color: #FFFFFF;
-}
+      .item img {
+        width: 100%;
+      }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023.98px) {
+    .item {
+        width: 50%;
+      }
+  }
 
-.btn-primary {
-    background: #C8A35F!important;
-    padding: 10px 40px !important;
-    border-color: #C8A35F!important;
-    margin-top: 40px;
-    text-transform: uppercase;
-}
+  @media (max-width: 2559.98px) { 
 
-.btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(200, 163, 95, 0.4)!important;
+  .item img {
+    width: 100%;
+  }
 }

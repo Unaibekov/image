@@ -1,139 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Новый сайт</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Новый сайт</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<div class="uk-width-1-1 uk-background-secondary uk-light ">
-    <div class="uk-container uk-container-center uk-padding-small uk-visible@s">
-        <div class="uk-grid uk-flex-between">
-            <div class="uk-flex uk-flex-middle uk-visible@s">
-                <span class="uk-margin-small-right" uk-icon="icon: clock"></span>
-                ПН-ПТ 09:00-18:00
-            </div>
-            <a href="tel:+78553111111">
-                <div class="uk-flex uk-flex-middle">
-                    <span class="uk-margin-small-right" uk-icon="icon: receiver"></span>
-                    <div>(8553) 111-111</div>
-                </div>
-            </a>
-            <div class="uk-flex uk-flex-middle  uk-visible@m">
-                <span class="uk-margin-small-right" uk-icon="icon: location"></span>
-                г. Альметьевск, ул. Шевченко, 108
-            </div>
-        </div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <main style="width: 100%; height: 100vh;">
+    <div style="width: 100%; height: 75%; background: red;"></div>
+    <div style="display: flex; flex-wrap: wrap;">
+      <div class="item" style="width: 25%; height: 300px;">
+          <i class="line"></i>
+          <img class="img" src="img/01.jpg" alt='LessonsImage' />
+          <div class="overlay"></div>
+          <div class="title">Заголовок</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path fill="#fff" d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z" />
+          </svg>
+      </div>
+      <div class="item" style="width: 25%; height: 300px;">
+          <i class="line"></i>
+          <img class="img" src="img/01.jpg" alt='LessonsImage' />
+          <div class="overlay"></div>
+          <div class="title">Заголовок</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path fill="#fff" d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z" />
+          </svg>
+      </div>
+      <div class="item" style="width: 25%; height: 300px;">
+          <i class="line"></i>
+          <img class="img" src="img/01.jpg" alt='LessonsImage' />
+          <div class="overlay"></div>
+          <div class="title">Заголовок</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path fill="#fff" d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z" />
+          </svg>
+      </div>
+      <div class="item" style="width: 25%; height: 300px;">
+          <i class="line"></i>
+          <img class="img" src="img/01.jpg" alt='LessonsImage' />
+          <div class="overlay"></div>
+          <div class="title">Заголовок</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path fill="#fff" d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z" />
+          </svg>
+      </div>
+      <div class="item" style="width: 25%; height: 300px;">
+          <i class="line"></i>
+          <img class="img" src="img/01.jpg" alt='LessonsImage' />
+          <div class="overlay"></div>
+          <div class="title">Заголовок</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path fill="#fff" d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z" />
+          </svg>
+      </div>
     </div>
-</div>        
-<nav class="uk-container" uk-navbar>
-    <div class="uk-width-1-1 uk-flex uk-flex-middle uk-flex-between uk-padding-small">
-        <img class="logo" src="img/logo.svg" alt="">  
-        <ul class="uk-navbar-nav uk-visible@s">
-            <li>
-                <a href="#">О нас</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a href="#">Услуги</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a href="#">Портфолио</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-        <span uk-toggle="target: #offcanvas-usage" class="uk-hidden@s" uk-icon="icon: menu"></span>
-    </div>
-</nav>
-<div id="offcanvas-usage" uk-offcanvas>
-    <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <div style="background: blueviolet;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 15px;">
-            <div class="uk-flex uk-flex-middle uk-margin-top">
-                <span class="uk-margin-small-right" uk-icon="icon: clock"></span>
-                ПН-ПТ 09:00-18:00
-            </div>
-            <a href="tel:+78553111111">
-                <div class="uk-flex uk-flex-middle uk-margin-small-top">
-                    <span class="uk-margin-small-right" uk-icon="icon: receiver"></span>
-                    <div>(8553) 111-111</div>
-                </div>
-            </a>
-            <div class="uk-flex uk-flex-middle uk-margin-small-top">
-                <span class="uk-margin-small-right" uk-icon="icon: location"></span>
-                г. Альметьевск, ул. Шевченко, 108
-            </div>
-        </div>
-    </div>
-</div>
-<div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push; ratio: 8:3;">
+  </main>
 
-    <ul class="uk-slideshow-items">
-        <li>
-            <img src="img/01.png" alt="" uk-cover>
-            <div class="uk-position-center uk-position-small uk-text-center uk-light">
-                <h2 class="uk-margin-remove">Center</h2>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </li>
-        <li>
-            <img src="img/02.jpg" alt="" uk-cover>
-            <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
-                <h3 class="uk-margin-remove">Bottom</h3>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </li>
-        <li>
-            <img src="img/03.jpg" alt="" uk-cover>
-            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                <h3 class="uk-margin-remove">Overlay Bottom</h3>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </li>
-        <li>
-            <img src="img/04.jpg" alt="" uk-cover>
-            <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
-                <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
-            </div>
-        </li>
-    </ul>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {
+      myFunction();
+    };
 
-    <div class="uk-light">
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-    </div>
-
-</div>
-    
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+    function myFunction() {
+      var winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      var height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
 </body>
 </html>
