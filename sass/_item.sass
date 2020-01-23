@@ -1,0 +1,121 @@
+
+.item
+    background: url(../img/01.jpg) no-repeat center center / cover    
+    width: 25%
+    height: 350px
+    display: flex
+    align-items: flex-end
+    transition: all 0.3s ease-in-out
+    position: relative
+    overflow: hidden
+    cursor: pointer
+
+.item:nth-child(2)
+    background: url(../img/02.jpg) no-repeat center center / cover
+
+.item:nth-child(3)
+    background: url(../img/03.jpg) no-repeat center center / cover
+
+.item:nth-child(4)
+    background: url(../img/04.jpg) no-repeat center center / cover
+
+.item:hover
+    transition: all 0.3s ease-in-out
+
+.item:hover .overlay
+    opacity: 0.5
+
+.item:hover .line
+    width: 100%
+
+
+.title
+    position: absolute
+    color: white
+    font-size: 40px
+    margin: -15px 0 20px 20px    
+
+.icon
+    position: absolute
+    width: 4em
+    height: 4em
+    transition: all 0.3s ease-in-out
+
+
+    &
+        opacity: 0
+        position: absolute
+        right: 0
+        bottom: 20px
+        transform: translateX(-80%)
+        width: 2em
+        height: 2em
+        transition: all 0.3s ease-in-out
+
+
+    .item:hover &
+        opacity: 1
+        transform: translateX(-50%)
+        transition: all 0.3s ease-in-out
+
+.overlay
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    opacity: 0
+    background-color: #000
+    -webkit-transition: opacity 0.35s
+    -o-transition: opacity 0.35s
+    transition: opacity 0.35s
+
+.line
+    height: 5px
+    display: block
+    background: linear-gradient(45deg, rgba(0,129,255,1) 0%, rgb(0, 247, 255) 100%)
+    bottom: 0px
+    width: 0%
+    transition: width 0.3s
+    position: absolute
+    z-index: 9
+
+// @media (max-width: 575.98px) 
+//     .item
+//         width: 100%
+//     img 
+//         width: 100%
+
+
+// @media (min-width: 768px) 
+// .item
+//     width: 50%
+
+// @media (max-width: 2559.98px)
+
+// .item img
+//     width: 100%
+
+
+//       @media (max-width: 575.98px) { 
+//       .item {
+//           width: 100%;
+//         }
+
+//       .item img {
+//         width: 100%;
+//       }
+//   }
+  
+//   @media (min-width: 768px) and (max-width: 1023.98px) {
+//     .item {
+//         width: 50%;
+//       }
+//   }
+
+//   @media (max-width: 2559.98px) { 
+
+//   .item img {
+//     width: 100%;
+//   }
+// }
